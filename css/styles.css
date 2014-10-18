@@ -5,9 +5,9 @@
 */
 
 /*  ===GLOBAL===  */
-* {
+/** {
 	outline: 1px red solid;
-}
+}*/
 
 html {
 	height: 100%;
@@ -72,7 +72,8 @@ li {
 
 .nav .logo-wrap {
 	position: absolute;
-	right: 55%;
+	top: 10px;
+	right: 50%;
 }
 
 .logo {
@@ -186,8 +187,8 @@ li {
 	color: #374654;
 }
 
-.main-content ul:last-child {
-	margin-bottom: 100px;
+.benefits p:last-child {
+	margin-bottom: 70px;
 }
 
 .main-content h1 {
@@ -282,6 +283,10 @@ footer p {
 		height: 497px;
 	}
 
+	.main-content h3 {
+		width: 80%;
+	}
+
 }
 
 @media screen and (max-width: 768px) {  /* sm and up */
@@ -308,13 +313,37 @@ footer p {
 	}
 
 	.tick-disabled {
-	padding-top: 10px;
-	margin-bottom: 75px;
+		padding-top: 10px;
+		margin-bottom: 75px;
 	}
 
 	.email {
 		width: 80%;
 		margin: 0 auto;
+	}
+
+	.main-content h1 {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.875em;
+	}
+
+	.main-content li {
+		padding-left: 0;
+		padding-right: 0;
+		max-width: 80%;
+	}
+
+	li .icon {
+		margin: 0 0 10px 10px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	
+	.header-bg {
+		height: 800px;
 	}
 }
 
@@ -327,10 +356,6 @@ footer p {
 
 	.nav a {
 		left:5%;
-	}
-
-	.header-bg {
-		height: 800px;
 	}
 
 	.headline h1 {
@@ -353,11 +378,17 @@ footer p {
 
 	.hand {
 		right: 5%;
+		width: 400px;
+		height: 442px;
 	}
 
 	.email {
 		width: 95%;
 		margin: 0 auto;
+	}
+
+	.main-content li {
+		max-width: 90%;
 	}
 }
 
