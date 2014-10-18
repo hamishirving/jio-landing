@@ -60,14 +60,34 @@ li {
 	color: #fff;
 	position: absolute;
 	left: 10%;
-	transition: border-bottom 2s ease;
+	transition: border 1000ms ease;
 	-webkit-font-smoothing: antialiased;
+}
+
+.nav a:before {
+	content: "";
+	position: absolute;
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid #fff;
+    bottom: 0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform: 0.2s ease-in;
+}
+
+.nav a:hover:before
+{
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+   
 }
 
 .nav a:hover {
 	text-decoration: none;
 	color: #fff;
-	border-bottom: 1px solid #fff;
 }
 
 .nav .logo-wrap {
@@ -119,15 +139,27 @@ li {
 	height: 45px;
 	width: 200px;
 	font-size: 1.0em;
-	background-color: #384755;
+	background-color: #3D4D5C;
+	-webkit-transition-property: background-color 0.5s ease;
+	-moz-transition-property: background-color 0.5s ease;
+	-o-transition-property: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
 	border: none;
 	border-radius: 5px;
+}
+
+.headline button:hover {
+	background-color: #303D48;
 }
 
 .headline button a {
 	color: #fff;
 	font-size: 0.875em;
 	text-transform: uppercase;
+}
+
+.headline button a:hover {
+	text-decoration: none;
 }
 
 .hand {
@@ -175,6 +207,14 @@ li {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
+form, input {
+	color: #374654;
+}
+
+form:focus, input:focus {
+	color: #374654;
+}
+
 .tick-disabled {
 	width: 45px;
 	margin: 0 auto;
@@ -216,6 +256,7 @@ li {
 	font-weight: 300;
 	font-size: 1.0em;
 	padding-bottom: 15px;
+	margin-right: 15%;
 	border-bottom: 2px solid #374654;
 
 }
@@ -249,6 +290,19 @@ footer {
 .foot {
 	text-align: center;
 	margin: 115px 0 115px 0;
+}
+
+.foot a {
+	color: #374654;
+	text-decoration: none;
+	font-size: 0.857em;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}	
+
+.foot a:hover {
+/*	text-decoration: none;*/
+	color: #374654;
 }
 
 footer p {
@@ -338,6 +392,14 @@ footer p {
 	li .icon {
 		margin: 0 0 10px 10px;
 	}
+
+	.tick-disabled {
+		padding-top: 20px;
+	}
+
+	.mail-icon {
+		padding-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -390,6 +452,15 @@ footer p {
 	.main-content li {
 		max-width: 90%;
 	}
+
+	.main-content h4 {
+		margin-right: 5%;
+	}
+
+	.main-content p {
+		margin-right: 5%;
+	}
+
 }
 
 
